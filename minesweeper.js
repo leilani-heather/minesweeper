@@ -1,7 +1,93 @@
 document.addEventListener('DOMContentLoaded', startGame)
 
 // Define your `board` object here!
-// var board = 
+
+var board = {
+  cells: [
+
+// Cell one = row 0, col 0, has a mine, start as hidden
+
+    {
+      row: 0,
+      col: 0,
+      isMine: true,
+      hidden: true,
+    },
+
+// Cell two = row 0, col 1, has no mine, start as hidden
+
+    {
+      row: 0,
+      col: 1,
+      isMine: false,
+      hidden: true,
+    },
+
+// Cell three = row 0, col 2, has no mine, start as hidden
+
+    {
+      row: 0,
+      col: 2,
+      isMine: false,
+      hidden: true,
+    },
+
+// Cell four = row 1, col 0, has no mine, start as hidden
+
+    {
+      row: 1,
+      col: 0,
+      isMine: false,
+      hidden: true,
+    },
+
+// Cell five = row 1, col 1, has a mine, start as hidden
+
+    {
+      row: 1,
+      col: 1,
+      isMine: true,
+      hidden: true,
+    },
+
+// Cell six = row 1, col 2, has no mine, start as hidden
+
+    {
+      row: 1,
+      col: 2,
+      isMine: false,
+      hidden: true,
+    },
+
+// Cell seven = row 2, col 0, has no mine, start as hidden
+
+    {
+      row: 2,
+      col: 0,
+      isMine: false,
+      hidden: true,
+    },
+
+// Cell eight = row 2, col 1, has a mine, start as hidden
+
+    {
+      row: 2,
+      col: 1,
+      isMine: true,
+      hidden: true,
+    },
+
+// Cell nine = row 2, col 2, has a mine, start as hidden
+
+    {
+      row: 2,
+      col: 2,
+      isMine: true,
+      hidden: true,
+    },
+  ],
+};
+
 
 function startGame () {
   // Don't remove this function call: it makes the game work!
