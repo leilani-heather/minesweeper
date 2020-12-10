@@ -152,7 +152,7 @@ Loop over and increase by 1 each time until all boolean statements are answered.
     }
     // If the value of all three variables are equal to the length of the array, the player wins. Play a message to let them know.
     if (oneCount + twoCount + threeCount === board.cells.length){
-      lib.displayMessage('You win!!!!!!!!!')
+      lib.displayMessage('OMG, you win!')
     } 
   }
 }
